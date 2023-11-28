@@ -20,9 +20,10 @@
     "vscode.json"
   ],
   "repository": {
-    "directory": "https://github.com/djdjz7/json-markup"
+    "url": "https://github.com/djdjz7/json-markup"
   },
   "icon": "logo.png",
+  "publisher": "djdjz7",
   "contributes": {
     "commands": [
       {
