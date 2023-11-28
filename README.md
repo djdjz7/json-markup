@@ -1,4 +1,7 @@
-# JSON Markup
+<div align="center">
+<img src="logo.png" />
+</div>
+<h1 align="center" style="margin: 12px;">JSON Markup</h1>
 
 An extremely silly project that allows you to write HTML in JSON.
 

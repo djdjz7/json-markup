@@ -19,7 +19,10 @@
   "extensionDependencies": [
     "vscode.json"
   ],
-  "repository": {"directory": "https://github.com/djdjz7/json-markup"},
+  "repository": {
+    "directory": "https://github.com/djdjz7/json-markup"
+  },
+  "icon": "logo.png",
   "contributes": {
     "commands": [
       {
