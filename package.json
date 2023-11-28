@@ -11,12 +11,17 @@
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
+  "author": {
+    "email": "djdjz7@icloud.com",
+    "name": "djdjz7",
+    "url": "https://djdjz7.top"
+  },
+  "extensionDependencies": [
+    "vscode.json"
+  ],
+  "repository": {"directory": "https://github.com/djdjz7/json-markup"},
   "contributes": {
     "commands": [
-      {
-        "command": "json-markup.helloWorld",
-        "title": "Hello World"
-      },
       {
         "command": "json-markup.generate",
         "title": "Generate HTML"
@@ -24,20 +29,25 @@
     ],
     "languages": [
       {
-        "id": "jsom",
+        "id": "json",
         "aliases": [
           "JSON Markup"
         ],
         "extensions": [
           ".jsom"
-        ],
-        "configuration": "./language-configuration.json"
+        ]
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "when": "resourceLangId == jsom",
+          "when": "resourceExtname == .jsom",
+          "command": "json-markup.generate"
+        }
+      ],
+      "commandPalette": [
+        {
+          "when": "resourceExtname == .jsom",
           "command": "json-markup.generate"
         }
       ]
@@ -49,7 +59,8 @@
     "watch": "tsc -watch -p ./",
     "pretest": "pnpm run compile && pnpm run lint",
     "lint": "eslint src --ext ts",
-    "test": "node ./out/test/runTest.js"
+    "test": "node ./out/test/runTest.js",
+    "package": "pnpm vsce package --no-dependencies"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.3",
@@ -61,9 +72,6 @@
     "eslint": "^8.52.0",
     "glob": "^10.3.10",
     "mocha": "^10.2.0",
-    "typescript": "^5.2.2"
-  },
-  "dependencies": {
-    "tsc": "^2.0.4"
+    "typescript": "^5.3.2"
   }
 }
