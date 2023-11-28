@@ -22,7 +22,7 @@
   "repository": {
     "url": "https://github.com/djdjz7/json-markup"
   },
-  "icon": "logo.png",
+  "icon": "icon-noshadow.png",
   "publisher": "djdjz7",
   "contributes": {
     "commands": [

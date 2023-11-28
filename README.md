@@ -1,5 +1,5 @@
 <div align="center">
-<img src="logo.png" />
+<img src="icon.png" />
 </div>
 <h1 align="center" style="margin: 12px;">JSON Markup</h1>
 
