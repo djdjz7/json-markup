@@ -2,7 +2,7 @@
   "name": "json-markup",
   "displayName": "JSON Markup",
   "description": "Extension for the JSON Markup project.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.84.0"
   },
@@ -22,7 +22,7 @@
   "repository": {
     "url": "https://github.com/djdjz7/json-markup"
   },
-  "icon": "icon-noshadow.png",
+  "icon": "icon.png",
   "publisher": "djdjz7",
   "contributes": {
     "commands": [
@@ -51,13 +51,13 @@
     "menus": {
       "editor/context": [
         {
-          "when": "resourceExtname == .jsom",
+          "when": "resourceLangId == jsom || resourceExtname == .jsom",
           "command": "json-markup.generate"
         }
       ],
       "commandPalette": [
         {
-          "when": "resourceExtname == .jsom",
+          "when": "resourceLangId == jsom || resourceExtname == .jsom",
           "command": "json-markup.generate"
         }
       ]

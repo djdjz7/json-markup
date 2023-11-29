@@ -1,9 +1,18 @@
 # Change Log
 
-All notable changes to the "json-markup" extension will be documented in this file.
+## [0.1.0] - 2023-11-29
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+### Added
 
-## [Unreleased]
+- zh-CN Translations.
+- *.jsom schema.
+- Associate *.jsom files to json.
+- Automatically format generated HTML
+
+### Changed
+
+-LangId for JSON Markup is now jsom instead of json.
+
+## [0.0.1] - 2023-11-28
 
 - Initial release
