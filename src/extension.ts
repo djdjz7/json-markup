@@ -8,7 +8,6 @@ import { generate } from "./generator";
 export function activate(context: vscode.ExtensionContext) {
   // Use the console to output diagnostic information (console.log) and errors (console.error)
   // This line of code will only be executed once when your extension is activated
-  console.log('Congratulations, your extension "json-markup" is now active!');
 
   // The command has been defined in the package.json file
   // Now provide the implementation of the command with registerCommand
@@ -25,7 +24,12 @@ export function activate(context: vscode.ExtensionContext) {
           language: "html",
           content: result.join(""),
         });
-        vscode.window.showTextDocument(doc, vscode.ViewColumn.Active, false);
+        await vscode.window.showTextDocument(
+          doc,
+          vscode.ViewColumn.Active,
+          false
+        );
+        vscode.commands.executeCommand("editor.action.formatDocument");
       } catch (error) {
         const e = error as Error;
         vscode.window.showErrorMessage(`${e.name}: ${e.message}`);
@@ -35,6 +39,3 @@ export function activate(context: vscode.ExtensionContext) {
 
   context.subscriptions.push(generator);
 }
-
-// This method is called when your extension is deactivated
-export function deactivate() {}

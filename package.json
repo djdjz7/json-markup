@@ -28,18 +28,24 @@
     "commands": [
       {
         "command": "json-markup.generate",
-        "title": "Generate HTML"
+        "title": "%json-markup.generate%"
       }
     ],
     "languages": [
       {
-        "id": "json",
+        "id": "jsom",
         "aliases": [
           "JSON Markup"
         ],
         "extensions": [
           ".jsom"
         ]
+      }
+    ],
+    "jsonValidation": [
+      {
+        "fileMatch": "*.jsom",
+        "url": "./jsom-schema.json"
       }
     ],
     "menus": {
@@ -55,6 +61,11 @@
           "command": "json-markup.generate"
         }
       ]
+    },
+    "configurationDefaults": {
+      "files.associations": {
+        "*.jsom": "json"
+      }
     }
   },
   "scripts": {
