@@ -11,6 +11,10 @@
                     "type": "string"
                 }
             },
+            "required": [
+                "name",
+                "value"
+            ],
             "type": "object"
         },
         "HTMLElement": {
@@ -41,6 +45,9 @@
                     "type": "boolean"
                 }
             },
+            "required": [
+                "name"
+            ],
             "type": "object"
         }
     }
