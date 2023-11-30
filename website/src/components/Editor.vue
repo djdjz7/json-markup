@@ -98,6 +98,7 @@ onMounted(() => {
     },
   };
 
+
   monaco.languages.json.jsonDefaults.setDiagnosticsOptions({
     schemaValidation: "error",
     schemas: [

@@ -1,5 +1,11 @@
 # Change Log
 
+## [0.1.1] - 2023-11-30
+
+### Changed
+
+- Modified schema to add the "required" field.
+
 ## [0.1.0] - 2023-11-29
 
 ### Added
@@ -11,7 +17,7 @@
 
 ### Changed
 
--LangId for JSON Markup is now jsom instead of json.
+- LangId for JSON Markup is now jsom instead of json.
 
 ## [0.0.1] - 2023-11-28
 
