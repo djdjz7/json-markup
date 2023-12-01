@@ -39,8 +39,7 @@ jobs:
         with:
           node-version: 18
           cache: 'pnpm'
-      - run: cd website
-      - run: ls
+      - run: cd ./website/
       - name: Install dependencies
         run: pnpm install
       - name: Build
