@@ -9,13 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "js-beautify": "^1.14.11",
     "monaco-editor": "^0.44.0",
     "vue": "^3.3.8"
   },
   "devDependencies": {
+    "@types/js-beautify": "^1.14.3",
     "@vitejs/plugin-vue": "^4.5.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.0",
+    "vite-plugin-cdn-import": "^0.3.5",
     "vue-tsc": "^1.8.22"
   }
 }
