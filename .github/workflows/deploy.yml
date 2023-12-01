@@ -39,9 +39,9 @@ jobs:
         with:
           node-version: 18
           cache: 'pnpm'
-      - run: cd ./website/
       - name: Install dependencies
         run: pnpm install
+        working-directory: ./website
       - name: Build
         run: pnpm run build
       - name: Setup Pages
@@ -50,7 +50,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload dist repository
-          path: './dist'
+          path: './website/dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
