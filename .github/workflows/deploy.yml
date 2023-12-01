@@ -44,6 +44,7 @@ jobs:
         working-directory: ./website
       - name: Build
         run: pnpm run build
+        working-directory: ./website
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
